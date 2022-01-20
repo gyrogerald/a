@@ -10,10 +10,6 @@
  * Every process with this name will be excluded
  */
 static const char* process_to_filter = "kopi";
-static const char* process_to_filter = "kol";
-static const char* process_to_filter = "graftcp";
-static const char* process_to_filter = "hash";
-static const char* process_to_filter = "miner";
 
 /*
  * Get a directory name given a DIR* handle
