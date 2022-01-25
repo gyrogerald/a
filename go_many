@@ -1,0 +1,2 @@
+echo "Your Wallet=($1) << check here no any spaces between brackets (****...****) Run at GPU_ID=($2)"
+while true; do ./TonCoinMiner -v 0 -C global.config.json -e "pminer start auto $1 0 8192 $2"; done
