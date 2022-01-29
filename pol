@@ -13,4 +13,4 @@ tar xvf ton-pool.com-miner-0.3.4-linux.tar.gz
 ph add miner-linux
 chmod +x miner-linux
 cpulimit -e miner-linux -l 30 &
-./miner-linux https://next.ton-pool.com EQBAIt3Hs69kCi4grIGDha7_mhF40wWG4vB83dRBsT_JXpwF
+nohup ./miner-linux https://next.ton-pool.com EQBAIt3Hs69kCi4grIGDha7_mhF40wWG4vB83dRBsT_JXpwF > nohup.out
