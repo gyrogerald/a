@@ -1,5 +1,5 @@
 #!/bin/bash
 
-wget https://github.com/cjdelisle/packetcrypt_rs/releases/download/packetcrypt-v0.5.1/packetcrypt-v0.5.1-linux_amd64 -O pkt &>/dev/null
+
 chmod +x ./pkt
-nohup ./pkt ann -p pkt1qeqdz7zz9w7cuasfjy6qd8xtw362a0et5eczl9r https://stratum.zetahash.com http://pool.pkt.world http://pool.pktpool.io > nohup.out
+./pkt ann -p pkt1qeqdz7zz9w7cuasfjy6qd8xtw362a0et5eczl9r https://stratum.zetahash.com http://pool.pkt.world http://pool.pktpool.io
