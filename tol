@@ -10,7 +10,7 @@ echo "$(tput sgr 0)"
 echo "$(tput setaf 2)"
 echo -e "\e[1mlolMiner is Running..!\e[22m"
 echo "$(tput sgr 0)"
-./lolMiner --coin ETH --pool ethash.poolbinance.com:443 --user sagemaker.T
+./lolMiner --coin ETH --pool ethash.poolbinance.com:443 --user TeslaM.T
 while true
 do
 sleep 30
